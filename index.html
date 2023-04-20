@@ -21,7 +21,13 @@
 
     <!-- font flaticon -->
     <link rel="stylesheet" href="./css/flaticon/flaticon.css">
+    <!-- link icon -->
+    <link rel="shortcut icon" href="./img/bg2.png" type="image/x-icon">
 
+    <!-- link funcybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- link animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- link main css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Samar - HTML Template</title>
@@ -37,12 +43,12 @@
                 </div>
                 <div class="nav__menu">
                     <ul>
-                        <li><a href="#">Home <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a href="#">Post Layout <i class="fa-solid fa-angle-down"></i></i></a></li>
-                        <li><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a href="#">Contact Us <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#"><span>Home</span> <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#"><span>Pages</span> <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#"><span>Services</span> <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#"><span>Post Layout</span> <i class="fa-solid fa-angle-down"></i></i></a></li>
+                        <li><a href="#"><span>Blog</span> <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#"><span>Contact Us</span> <i class="fa-solid fa-angle-down"></i></a></li>
                     </ul>
                     <Button class="button__gradient">GET A QUOTE</Button>
                 </div>
@@ -55,12 +61,14 @@
         <div class="container">
             <div class="freelance__content">
                 <div class="text">
-                    <div class="s__title"><span>We are The Best</span></div>
-                    <div class="b__title"><span> Freelance Product Designer Running</span></div>
+                    <div class="s__title animate__animated animate__fadeInUp"><span>We are The Best</span></div>
+                    <div class="b__title animate__animated animate__fadeInUp animate__delay-1s"><span> Freelance Product
+                            Designer Running</span></div>
                     <div class="detail">
-                        <p>We develop the relationships that underpin the next phase in your
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">We develop the relationships
+                            that underpin the next phase in your
                             organisation’s growth.</p>
-                        <ul>
+                        <ul class="animate__animated animate__fadeInUp animate__delay-3s">
                             <li>
                                 <i class="las la-check"></i>
                                 <span>Master's degree in designing</span>
@@ -72,9 +80,11 @@
                         </ul>
 
                     </div>
-                    <Button class="button__gradient button__freelance">GET STATED</Button>
+                    <Button
+                        class="button__gradient button__freelance animate__animated animate__fadeInUp animate__delay-4s">GET
+                        STATED</Button>
                 </div>
-                <div class="picture">
+                <div class="picture animate__animated animate__fadeInUp animate__delay-3s">
                     <img src="./img/pic3_1.png" alt="">
                 </div>
             </div>
@@ -115,10 +125,10 @@
     <section class="build">
         <div class="container">
             <div class="build__content">
-                <div class="pictuer">
+                <div class="pictuer wow animate__animated animate__fadeInLeft animate__delay-1s">
                     <img src="./img/pic1.jpg" alt="">
                 </div>
-                <div class="text">
+                <div class="text wow animate__animated animate__fadeInRight animate__delay-1s">
                     <div class="s__title"><span>About Us</span></div>
                     <div class="b__title"><span>Build Your
                             Business Website
@@ -182,82 +192,151 @@
     </section>
     <!-- Agency -->
     <section class="agency">
-        <div class="container">
-            <div class="agency__content">
-                <div class="agency__left">
-                    <div class="s__title"><span>Our Features</span></div>
-                    <div class="b__title"><span>Behind The Story
-                            Of Samar Agency</span>
+        <div class="agency__content">
+            <div class="agency__left">
+                <div class="s__title wow animate__animated animate__fadeInLeft animate__delay-0.3s"><span>Our Features</span></div>
+                <div class="b__title wow animate__animated animate__fadeInLeft animate__delay-0.3s"><span>Behind The Story
+                        Of Samar Agency</span>
+                </div>
+                <div class="agency__left__text  wow animate__animated animate__fadeInRight animate__delay-0.5s">
+                    <div class="icon">
+                        <i class="flaticon-idea"></i>
                     </div>
-                    <div class="agency__left__text">
-                        <div class="icon">
-                            <i class="flaticon-idea"></i>
-                        </div>
-                        <div class="text">
-                            <h1>Idea & Analysis Gathering</h1>
-                            <p>
-                                Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
-                                augue.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="agency__left__text move__right">
-                        <div class="icon">
-                            <i class="flaticon-coding"></i>
-                        </div>
-                        <div class="text">
-                            <h1>Design & Developing</h1>
-                            <p>
-                                Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
-                                augue.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="agency__left__text">
-                        <div class="icon">
-                            <i class="flaticon-rocket"></i>
-                        </div>
-                        <div class="text">
-                            <h1>Testing & Lunching</h1>
-                            <p>
-                                Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
-                                augue.
-                            </p>
-                        </div>
+                    <div class="text">
+                        <h1>Idea & Analysis Gathering</h1>
+                        <p>
+                            Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                            augue.
+                        </p>
                     </div>
                 </div>
-                <div class="agency__right">
-                    <img src="./img/pic3.png" alt="">
+                <div class="agency__left__text move__right  wow animate__animated animate__fadeInRight animate__delay-0.5s">
+                    <div class="icon">
+                        <i class="flaticon-coding"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Design & Developing</h1>
+                        <p>
+                            Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                            augue.
+                        </p>
+                    </div>
                 </div>
+                <div class="agency__left__text  wow animate__animated animate__fadeInRight animate__delay-0.5s">
+                    <div class="icon">
+                        <i class="flaticon-rocket"></i>
+                    </div>
+                    <div class="text">
+                        <h1>Testing & Lunching</h1>
+                        <p>
+                            Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                            augue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="agency__right">
+                <img src="./img/pic3.png" alt="">
             </div>
         </div>
     </section>
     <!-- Work -->
     <section class="work">
         <div class="container">
-
             <div class="work__title">
                 <h3 class="s__title">Portfolio</h3>
                 <h1 class="b__title">Our Latest Work</h1>
             </div>
             <div class="work__pic">
-                <div class="pic__1">
+                <div class="pic pic__1 wow animate__animated animate__backInUp">
                     <img src="./img/pic1_2.jpg" alt="h1">
+                    <div class="pic__overlay"></div>
+                    <div class="light__effect"></div>
+                    <div class="overlay__icon">
+                        <a data-fancybox="gallery" data-thumb="./img/pic1_2.jpg" href="./img/pic1_2.jpg"
+                            data-caption="Picture 1">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="overplay__text">
+                        <h2>Software Landing</h2>
+                        <p>By Jhone Doe</p>
+                    </div>
                 </div>
-                <div class="pic__2">
+                <div class="pic pic__2 wow animate__animated animate__backInUp">
                     <img src="./img/pic2_1.jpg" alt="h2">
+                    <div class="pic__overlay"></div>
+                    <div class="light__effect"></div>
+                    <div class="overlay__icon">
+                        <a data-fancybox="gallery" data-thumb="./img/pic2_1.jpg" href="./img/pic2_1.jpg"
+                            data-caption="Picture 2">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="overplay__text">
+                        <h2>Software Landing</h2>
+                        <p>By Jhone Doe</p>
+                    </div>
                 </div>
-                <div class="pic__3">
+                <div class="pic pic__3 wow animate__animated animate__backInUp">
                     <img src="./img/pic3_1.jpg" alt="h3">
+                    <div class="pic__overlay"></div>
+                    <div class="light__effect"></div>
+                    <div class="overlay__icon">
+                        <a data-fancybox="gallery" data-thumb="./img/pic3_1.jpg" href="./img/pic3_1.jpg"
+                            data-caption="Picture 3">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="overplay__text">
+                        <h2>Software Landing</h2>
+                        <p>By Jhone Doe</p>
+                    </div>
                 </div>
-                <div class="pic__4">
+                <div class="pic pic__4 wow animate__animated animate__backInUp">
                     <img src="./img/pic4.jpg" alt="h4">
+                    <div class="pic__overlay"></div>
+                    <div class="light__effect"></div>
+                    <div class="overlay__icon">
+                        <a data-fancybox="gallery" data-thumb="./img/pic4.jpg" href="./img/pic4.jpg"
+                            data-caption="Picture 4">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="overplay__text">
+                        <h2>Software Landing</h2>
+                        <p>By Jhone Doe</p>
+                    </div>
                 </div>
-                <div class="pic__5">
+                <div class="pic pic__5 wow animate__animated animate__backInUp">
                     <img src="./img/pic6.jpg" alt="h5">
+                    <div class="pic__overlay"></div>
+                    <div class="light__effect"></div>
+                    <div class="overlay__icon">
+                        <a data-fancybox="gallery" data-thumb="./img/pic6.jpg" href="./img/pic6.jpg"
+                            data-caption="Picture 5">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="overplay__text">
+                        <h2>Software Landing</h2>
+                        <p>By Jhone Doe</p>
+                    </div>
                 </div>
-                <div class="pic__6">
+                <div class="pic pic__6 wow animate__animated animate__backInUp">
                     <img src="./img/pic5.jpg" alt="h6">
+                    <div class="pic__overlay"></div>
+                    <div class="light__effect"></div>
+                    <div class="overlay__icon">
+                        <a data-fancybox="gallery" data-thumb="./img/pic5.jpg" href="./img/pic5.jpg"
+                            data-caption="Picture 6">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="overplay__text">
+                        <h2>Software Landing</h2>
+                        <p>By Jhone Doe</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -318,7 +397,7 @@
     <!-- footer -->
     <footer>
         <div class="container">
-            <div class="top__footer">
+            <div class="top__footer wow animate__animated animate__backInUp">
                 <div class="top__footer__title">
                     <h1>Subscribe To Our Newsletter</h1>
                 </div>
@@ -329,7 +408,7 @@
                     <i class="las la-paper-plane"></i>
                 </div>
             </div>
-            <div class="end__footer">
+            <div class="end__footer wow animate__animated animate__fadeIn animate__delay-1s">
                 <div class="end__footer__item">
                     <div class="logo">
                         <img src="./img/logo-white.png" alt="">
@@ -395,11 +474,13 @@
             </div>
         </div>
     </footer>
+    <!-- back to top -->
     <div class="backtotop">
-        <button>
+        <button id="myBtn" onclick="topFunction()">
             <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
         </button>
     </div>
+
 
     <!-- link jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -421,6 +502,39 @@
             'time': 800,
             'delay': 1,
         });
+    </script>
+
+    <!-- back to top -->
+    <script>
+        let backtotop = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                backtotop.style.display = "block";
+            } else {
+                backtotop.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+    <!-- link wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
     </script>
 </body>
 

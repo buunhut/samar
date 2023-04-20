@@ -30,6 +30,9 @@ html, body{
     padding: 10px 0;
 
 }
+a{
+    color: white;
+}
 .button__gradient{
     padding: 20px 40px;
     border: none;
@@ -76,25 +79,30 @@ header .nav__menu ul li{
     display: inline;
     margin: 0 10px;
     font-size: 15px;
+    padding: 40px 0;
+}
+header .nav__menu li:hover a{
+    color: #f55f8d;
+}
+
+header .nav__menu li:hover span{
+    animation: menuUpDown 0.3s forwards;
 }
 header .nav__menu ul li a{
+    text-decoration: none;
     color: black;
     font-size: 15px;
+    font-weight: bold;
+
 }
 
 header .nav__menu ul li i{
     font-size: 12px;
 }
 
-header .nav__menu ul li a:hover{
+/* header .nav__menu ul li a:hover{
     color: #f55f8d;
-}
-    header .nav__menu a{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-
-}
+} */
 /* freelance */
 .freelance{
     padding: 0 0;
@@ -158,12 +166,19 @@ header .nav__menu ul li a:hover{
 }
 .services .service__item{
     text-align: center;
-    padding: 30px 50px 20px;
+    padding: 20px 50px 10px;
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .5s;
+    border: 3px solid transparent;
 }
-.services .service__item img{
+.services .service__item:hover{
+    transform: translateY(-20px);
+    border-image: url('.././img/br.png') 1 round;
+
+}
+    .services .service__item img{
     width: 80%;
 }
 .services .services__content .service__item h2{
@@ -282,7 +297,7 @@ header .nav__menu ul li a:hover{
 }
 /* agency */
 .agency{
-    padding: 0 0;
+    padding: 0px 0;
     background-image: url('.././img/bg2.png');
     background-size: 100%;
     background-position: center;
@@ -292,8 +307,17 @@ header .nav__menu ul li a:hover{
     display: flex;
     padding: 120px 0;
 }
-.agency__right img{
-    width: 110%;
+.agency .agency__left{
+    margin-left: 5%;
+}
+.agency .agency__right{
+    overflow: hidden;
+}
+.agency .agency__right img{
+    margin-top: 30px;
+    width: 100%;
+    animation: move2 5s infinite;
+
 }
 .agency .agency__left .agency__left__text{
     display: flex;
@@ -370,6 +394,162 @@ header .nav__menu ul li a:hover{
 .work .pic__6 {
     grid-column: 1 / span 2;
 }
+/* hiếu ứng vùng work */
+.work .pic{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+/* thanh sáng */
+.work .pic .light__effect{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all .6s;
+}
+
+.work .pic:hover .light__effect {
+    left: 125%;
+}
+
+.work .pic .pic__overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+
+}
+.work .pic:hover .pic__overlay{
+    opacity: 1;
+
+}
+.work .pic:hover .pic__overlay{
+
+
+}    
+.work .overlay__icon{
+    padding: 10px 12px;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
+    border-radius: 10px;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    transform: translate(20px, -20px);
+    transition: all .8s;
+    overflow: hidden;
+
+}
+.work .pic:hover .overlay__icon{
+    transform: translate(0);
+    opacity: 1;
+}
+.work .overplay__text{
+    color: white;
+    text-align: left;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    transform: translateY(80px);
+    transition: all .8s;
+    overflow: hidden;
+}
+
+.work .pic:hover .overplay__text{
+    transform: translateY(0);
+}
+
+
+
+/* .pic::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+}
+
+.pic:hover::before {
+    left: 125%;
+}
+
+.work__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.75s;
+}
+
+.pic:hover .work__overlay {
+    opacity: 1;
+}
+
+.work__icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    border-radius: 10px;
+    transform: translate(20px, -20px);
+    transition: all 0.75s;
+}
+
+.work__icon a {
+    color: #fff;
+}
+
+.work__item:hover .work__icon {
+    transform: translate(0);
+}
+
+.work__icon a {
+    cursor: pointer;
+}
+
+.work__text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    text-align: left;
+    transform: translateY(150px);
+    transition: all 0.75s;
+} */
+
+
+
+
+
+/* blog */
 .blog{
     padding: 120px 0 50px;
     text-align: center;
@@ -445,7 +625,7 @@ footer{
     padding: 40px 0 0;
     position: relative;
 }
-footer::before{
+footer::after{
     content: "";
     background-color: #0E1B1F;
     background-image: url('.././img/pattern2.png');
@@ -455,7 +635,7 @@ footer::before{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -20;
+    z-index: -1;
     width: 100%;
     height: 100%;
 }
@@ -473,7 +653,6 @@ footer .top__footer{
     position: absolute;
     top: 0;
     width: 90%;
-    z-index: -10;
 }
 footer .top__footer__title{
     width: 50%;
@@ -482,6 +661,7 @@ footer .top__footer__title{
 footer .top__footer__form{
     width: 50%;
     position: relative;
+    z-index: 20;
 
 }
 footer .top__footer__form input{
@@ -645,9 +825,38 @@ footer .copyright .right__copy a:hover{
     border-radius: 10px;
     font-size: 18px;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
+    z-index: 10;
 }
 .backtotop button a{
     color: white;
 }
+
+/* animation */
+@keyframes menuUpDown{
+    49% {
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+@keyframes move2 {
+    0% {
+        transform: rotate(1deg) translate(2px, 2px);
+    }
+
+    50% {
+        transform: rotate(-1deg) translate(-2px, -2px);
+    }
+
+    100% {
+        transform: rotate(1deg) translate(2px, 2px);
+    }
+}
+
