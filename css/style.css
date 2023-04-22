@@ -76,7 +76,7 @@ header .nav__menu ul{
     list-style: none;
 }
 header .nav__menu ul li{
-    display: inline;
+    display: inline-block;
     margin: 0 10px;
     font-size: 15px;
     padding: 40px 0;
@@ -86,6 +86,7 @@ header .nav__menu li:hover a{
 }
 
 header .nav__menu li:hover span{
+    display: inline-block;
     animation: menuUpDown 0.3s forwards;
 }
 header .nav__menu ul li a{
@@ -178,7 +179,7 @@ header .nav__menu ul li i{
     border-image: url('.././img/br.png') 1 round;
 
 }
-    .services .service__item img{
+.services .service__item img{
     width: 80%;
 }
 .services .services__content .service__item h2{
@@ -431,18 +432,12 @@ header .nav__menu ul li i{
     width: 100%;
     height: 100%;
     transition: all .5s;
-
 }
 .work .pic:hover .pic__overlay{
     opacity: 1;
-
 }
-.work .pic:hover .pic__overlay{
-
-
-}    
 .work .overlay__icon{
-    padding: 10px 12px;
+    padding: 12px 14px;
     background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
     border-radius: 10px;
     font-size: 18px;
@@ -476,76 +471,6 @@ header .nav__menu ul li i{
 
 
 
-/* .pic::before {
-    content: "";
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    display: block;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-    transform: skewX(-25deg);
-    transition: all 0.75s;
-}
-
-.pic:hover::before {
-    left: 125%;
-}
-
-.work__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    transition: all 0.75s;
-}
-
-.pic:hover .work__overlay {
-    opacity: 1;
-}
-
-.work__icon {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 28px;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
-    background-size: 200%;
-    border-radius: 10px;
-    transform: translate(20px, -20px);
-    transition: all 0.75s;
-}
-
-.work__icon a {
-    color: #fff;
-}
-
-.work__item:hover .work__icon {
-    transform: translate(0);
-}
-
-.work__icon a {
-    cursor: pointer;
-}
-
-.work__text {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    text-align: left;
-    transform: translateY(150px);
-    transition: all 0.75s;
-} */
-
-
 
 
 
@@ -559,15 +484,13 @@ header .nav__menu ul li i{
 }
 .blog .blog__content{
     display: flex;
-    gap: 30px;
 }
 .blog .blog__item{
     text-align: left;
-    width: 33.33%;
+    width: auto;
     background-color: #FEEFF3;
     border-radius: 10px;
     padding-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .blog .blog__item .blog__pic{
     position: relative;
@@ -677,10 +600,12 @@ footer .top__footer__form input{
 footer .top__footer__form input:hover{
     border-color: #f55f8d;
 }
+
+
 footer .top__footer__form input:focus{
     border-color: #f55f8d;
 }
-footer .top__footer__form i{
+footer .top__footer__form span{
     width: 100px;
     height: 70px;
     line-height: 70px;
@@ -694,11 +619,17 @@ footer .top__footer__form i{
     right: 0;
     border-radius: 0 10px 10px 0;
     transition: all .8s;
+    cursor: pointer;
 
 }
-footer .top__footer__form i:hover{
+footer .top__footer__form span:hover{
     background-position: right center;
 }
+footer .top__footer__form span:hover i{
+    display: inline-block;
+    animation: emailMove .8s forwards;
+}
+
 /* end footer */
 footer .end__footer{
     margin: 200px 0 50px;
@@ -819,7 +750,7 @@ footer .copyright .right__copy a:hover{
 .backtotop button{
     width: 50px;
     height: 50px;
-    background-color: #f55f8d;
+    background-color: rgba(245, 95, 140, 0.6);
     color: white;
     border: none;
     border-radius: 10px;
@@ -846,6 +777,21 @@ footer .copyright .right__copy a:hover{
         opacity: 1;
     }
 }
+
+@keyframes emailMove{
+    49% {
+        transform: translateX(20px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+
 @keyframes move2 {
     0% {
         transform: rotate(1deg) translate(2px, 2px);

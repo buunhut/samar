@@ -26,8 +26,18 @@
 
     <!-- link funcybox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <!-- link animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- link owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- link main css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Samar - HTML Template</title>
@@ -194,8 +204,10 @@
     <section class="agency">
         <div class="agency__content">
             <div class="agency__left">
-                <div class="s__title wow animate__animated animate__fadeInLeft animate__delay-0.3s"><span>Our Features</span></div>
-                <div class="b__title wow animate__animated animate__fadeInLeft animate__delay-0.3s"><span>Behind The Story
+                <div class="s__title wow animate__animated animate__fadeInLeft animate__delay-0.3s"><span>Our
+                        Features</span></div>
+                <div class="b__title wow animate__animated animate__fadeInLeft animate__delay-0.3s"><span>Behind The
+                        Story
                         Of Samar Agency</span>
                 </div>
                 <div class="agency__left__text  wow animate__animated animate__fadeInRight animate__delay-0.5s">
@@ -210,7 +222,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="agency__left__text move__right  wow animate__animated animate__fadeInRight animate__delay-0.5s">
+                <div
+                    class="agency__left__text move__right  wow animate__animated animate__fadeInRight animate__delay-0.5s">
                     <div class="icon">
                         <i class="flaticon-coding"></i>
                     </div>
@@ -348,10 +361,52 @@
                 <p class="s__title">Our Blog</p>
                 <h1 class="b__title">Latest News & Blog</h1>
             </div>
-            <div class="blog__content">
+            <div class="blog__content owl-carousel">
+                <div class="blog__item">
+                    <div class="blog__pic">
+                        <img src="./img/pic_cycber.jpg" alt="">
+                        <button>23 MARCH 2022</button>
+                    </div>
+                    <h2>Lớp BCS07 tại Cycbersoft 112 Cao Thắng, Quận 10.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quidem nihil nesciunt id.
+                        Ipsa, magni!</p>
+                    <hr>
+                    <ul>
+                        <li><i class="fa fa-user-circle"></i> BY <span>JOHNE DOE</span></li>
+                        <li><i class="fa-regular fa-comment"></i> COMMENTS 15</li>
+                    </ul>
+                </div>
                 <div class="blog__item">
                     <div class="blog__pic">
                         <img src="./img/pic1_1.jpg" alt="">
+                        <button>23 MARCH 2022</button>
+                    </div>
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quidem nihil nesciunt id.
+                        Ipsa, magni!</p>
+                    <hr>
+                    <ul>
+                        <li><i class="fa fa-user-circle"></i> BY <span>JOHNE DOE</span></li>
+                        <li><i class="fa-regular fa-comment"></i> COMMENTS 15</li>
+                    </ul>
+                </div>
+                <div class="blog__item">
+                    <div class="blog__pic">
+                        <img src="./img/pic2.jpg" alt="">
+                        <button>23 MARCH 2022</button>
+                    </div>
+                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quidem nihil nesciunt id.
+                        Ipsa, magni!</p>
+                    <hr>
+                    <ul>
+                        <li><i class="fa fa-user-circle"></i> BY <span>JOHNE DOE</span></li>
+                        <li><i class="fa-regular fa-comment"></i> COMMENTS 15</li>
+                    </ul>
+                </div>
+                <div class="blog__item">
+                    <div class="blog__pic">
+                        <img src="./img/pic3.jpg" alt="">
                         <button>23 MARCH 2022</button>
                     </div>
                     <h2>Lorem ipsum dolor sit amet consectetur.</h2>
@@ -405,7 +460,7 @@
                     <form action="#" name="email">
                         <input type="text" name="email" value="" placeholder="Your Email Address">
                     </form>
-                    <i class="las la-paper-plane"></i>
+                    <span><i class="las la-paper-plane"></i></span>
                 </div>
             </div>
             <div class="end__footer wow animate__animated animate__fadeIn animate__delay-1s">
@@ -530,12 +585,38 @@
         });
     </script>
     <!-- link wow -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <!-- link owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            items: 3,
+            // navigation : true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
 </body>
 
 </html>
